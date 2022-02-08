@@ -4,7 +4,8 @@ import grails.gorm.services.Service
 
 @Service(Ccb)
 abstract class CcbService {
-    abstract Ccb save(Ccb ccb)
+
+    abstract Ccb save(Long id)
 
     List<Long> getSomeIds() {
         Ccb.withCriteria {
